@@ -7,7 +7,7 @@
 #
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ['https://besquevans.github.io', 'localhost:5500'] 
+    origins 'https://besquevans.github.io'
 
     resource '*',
       headers: :any,
